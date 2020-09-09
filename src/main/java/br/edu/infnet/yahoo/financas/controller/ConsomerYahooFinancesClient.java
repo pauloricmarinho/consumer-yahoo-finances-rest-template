@@ -24,7 +24,7 @@ public class ConsomerYahooFinancesClient {
 			FinancesWrapper wrapper = restClient.getForObject(SERVICE_URL, FinancesWrapper.class);
 			
 			System.err.println("--------------------------------------------");
-			System.out.println("----- 		  Bolsa de Valores 			----");
+			System.out.println("-----          Bolsa de Valores         ----");
 			System.err.println("--------------------------------------------");
 			wrapper.getFinances().getQuoteResponse().forEach(f2 ->  System.err.println(f2.toString()));
 			System.err.println("--------------------------------------------");
